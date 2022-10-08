@@ -5,7 +5,8 @@ const routes: Routes = [
 
   {
     path: '',
-    loadChildren: () => import('./modules/home/home.module').then(m =>m.HomeModule),//lazyload
+    // importacion dinamica
+    loadChildren: () => import(`./modules/home/home.module`).then(m =>m.HomeModule),//lazyload
     
   }
 ];

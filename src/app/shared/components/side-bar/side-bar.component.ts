@@ -3,13 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',
-  styleUrls: ['./side-bar.component.css']
+  styleUrls: ['./side-bar.component.css'],
 })
 export class SideBarComponent implements OnInit {
+  linksMenu: Array<any> = [
 
-  constructor() { }
+    { name: 'Home', icon: 'uil-estate' },
+    { name: 'Buscar', icon: '' },
+  ];
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
 }
