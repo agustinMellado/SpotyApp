@@ -16,7 +16,7 @@ export class SideBarComponent implements OnInit {
     defaultOptions: [],
     accessLink: [],
   };
-
+  //Arreglo para listas personalizadas
   customOptions: Array<any> = [];
 
   constructor() {}
@@ -49,7 +49,7 @@ export class SideBarComponent implements OnInit {
       },
       {
         name: 'Canciones que te gustan',
-        icon: 'uil-heard-medical',
+        icon: 'uil-heart-medical',
       },
     ];
     //---------------------------------------------
